@@ -1,0 +1,9 @@
+ function func1(arr) {                   
+        var size = arr.length;              
+        var temp = arr[size-1];             
+        arr[size-1] = arr[0];               
+        arr[0] = temp;                      
+        return arr;               
+
+console.log(func1([1, 2, 3]));
+
